@@ -1,0 +1,13 @@
+aoool
+oslexec
+lex.aoool_.cc
+scanner.cpp
+parser.cpp
+parser.hpp
+location.hh
+position.hh
+stack.hh
+parser.tab.*
+*.o
+flag
+*.log

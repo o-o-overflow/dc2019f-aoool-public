@@ -1,0 +1,11 @@
+main {
+  server {
+     server_name "aoool.ng";
+     location ".*\.png" {
+         root "main/static/";
+     }
+     location ".*" {
+         root "main/html/";
+     }
+  }
+}

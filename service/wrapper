@@ -1,0 +1,9 @@
+#!/bin/sh
+
+exec 2>/dev/null
+
+# delete old files
+find /aoool/var/log -type f -mmin +1 -exec rm {} \;
+find /aoool/var/www/uploads -type f -mmin +1 -exec rm {} \;
+find /tmp -type f -mmin +1 -exec rm {} \;
+stdbuf -i0 -o0 -e0 /opt/schitzo 10 /aoool/bin/aoool
